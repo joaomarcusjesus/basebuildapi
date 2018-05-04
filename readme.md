@@ -1,10 +1,23 @@
 # Base Build
- one more lesson for me and let's sign | using laravel 5.6 API and Vue js
+ one more lesson for me and let's sign 
 
 ## What am I using?
+
 * Laravel 5.6
 * Vue JS
-* Passaport JS
+* Passport
+* A few libs from the amazing spatie (https://github.com/spatie)
+
+## Features
+
+* Laravel slug
+* Laravel resources
+* Laravel custom request
+* Laravel policies
+* Laravel custom pagination
+
+## Show me routes
+* php artisan route:list
 
 ## Build me
 
