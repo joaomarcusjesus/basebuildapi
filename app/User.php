@@ -35,9 +35,14 @@ class User extends Authenticatable
         return $this->morphTo();
     }
 
+    public function articles()
+    {
+        return $this->hasMany(Article::class, 'user_id');
+    }
+
     /** Accessors **/
     public function is($roleName)
-    {
+    {        
         foreach ($this->roles()->get() as $role)
         {
             if ($role->name == $roleName)
@@ -47,5 +52,10 @@ class User extends Authenticatable
         }
 
         return false;
+    }
+
+    public function assignRole(User $user, $role)
+    {
+        return $user->roles()->attach(array_get($role, 'ids'));
     }
 }

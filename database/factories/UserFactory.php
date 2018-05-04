@@ -26,6 +26,7 @@ $factory->define(App\Article::class, function (Faker $faker) {
     return [
         'title' => $faker->realText,
         'subtitle' => $faker->sentence,
-        'body' => $faker->paragraph
+        'body' => $faker->paragraph,
+        'status' => 'waiting'
     ];
 });

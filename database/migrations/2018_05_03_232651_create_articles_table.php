@@ -21,6 +21,7 @@ class CreateArticlesTable extends Migration
             $table->longText('body')->nullable();
             $table->integer('user_id')->unsigned()->nullable();
             $table->foreign('user_id')->references('id')->on('users');
+            $table->enum('status', ['approved', 'review', 'waiting', 'rejected'])->nullable()->default('waiting');
             $table->timestamps();
         });
     }
