@@ -1,5 +1,10 @@
-# Project Title
- one more lesson for me and let's sign | using laravel 5.6 and vue js
+# Base Build
+ one more lesson for me and let's sign | using laravel 5.6 API and Vue js
+
+## What am I using?
+* Laravel 5.6
+* Vue JS
+* Passaport JS
 
 ## Build me
 
